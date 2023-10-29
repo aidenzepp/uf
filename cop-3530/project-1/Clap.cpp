@@ -79,7 +79,7 @@ bool Clap::Valid(const Node::Label& label)
 void Clap::Strip(Node::Label& label)
 {
     // Strips `"` characters from the end.
-    label = label.substr(1, label.size() - 2);
+    label = label.substr(label.find('"'), label.rfind('"'));
 }
 
 void Clap::Parse(unsigned int n)

@@ -95,7 +95,7 @@ Node* Node::Remove(Node* root, const Node::Value& value)
         // Removal for node with 1 child or no child.
         if (!root->nodeL || !root->nodeR)
         {
-            Node::PrintSuccess();
+            PrintSuccess();
 
             Node* temp = (root->nodeL) ? root->nodeL : root->nodeR;
 
@@ -290,7 +290,7 @@ void Node::Search(const Node* root, const Node::Label& label, std::string& outpu
 
     if (root->nodeL)
     {
-        Node::Search(root->nodeL, label, output);
+        Search(root->nodeL, label, output);
     }
 
     if (root->label == label)
@@ -301,7 +301,7 @@ void Node::Search(const Node* root, const Node::Label& label, std::string& outpu
 
     if (root->nodeR)
     {
-        Node::Search(root->nodeR, label, output);
+        Search(root->nodeR, label, output);
     }
 }
 
@@ -403,16 +403,16 @@ Node* Node::RotateR(Node* node)
 
 Node* Node::RotateLR(Node* node)
 {
-    node->nodeL = Node::RotateL(node->nodeL);
-    node = Node::RotateR(node);
+    node->nodeL = RotateL(node->nodeL);
+    node = RotateR(node);
 
     return node;
 }
 
 Node* Node::RotateRL(Node* node)
 {
-    node->nodeR = Node::RotateR(node->nodeR);
-    node = Node::RotateL(node);
+    node->nodeR = RotateR(node->nodeR);
+    node = RotateL(node);
 
     return node;
 }
@@ -426,25 +426,25 @@ Node* Node::Repair(Node* root)
     // L-L Case
     if (balanceN > 1 && balanceL >= 0)
     {
-        return Node::RotateR(root);
+        return RotateR(root);
     }
 
     // L-R Case
     if (balanceN > 1 && balanceL < 0)
     {
-        return Node::RotateLR(root);
+        return RotateLR(root);
     }
 
     // R-R Case
     if (balanceN < -1 && balanceR <= 0)
     {
-        return Node::RotateL(root);
+        return RotateL(root);
     }
 
     // R-L Case
     if (balanceN < -1 && balanceR > 0)
     {
-        return Node::RotateRL(root);
+        return RotateRL(root);
     }
 
     // Just in case.
