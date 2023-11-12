@@ -11,37 +11,17 @@ The `Graph` class represents an adjacency-list implementation of a graph data st
 
 Because the project does not specify whether multiple edges are allowed between any two nodes (as might happen in reality, where a website can contain multiple links to the same webpage) and because the edges between nodes have no weight, a `std::vector` is more appropriate than using, say, another `std::map`. If the `Graph` additionally contained another data field such as `std::map<std::string, int>`, said data field would allow for constant time access of the stored `std::vector`.
 
-Lastly, to avoid the annoyances of $O(n^2)$ time complexities for calculating the nodes that point to a given node (or, vice versa, for calculating the nodes that a given node points to), both directions of adjacency lists are stored in the `Graph`. Understandably, this is highly nonoptimal as the space complexity doubles by doing so. However, I was unable to determine a better solution to mitigate this issue. For example, instead of storing a `std::vector<std::string>` the map could instead store a `std::vector<std::pair<std::string, double>>` where the `double` represents $\frac{1}{outdegree(node)}$. Yet this doesn't seem possible as there is no way of knowing during the insertion process what the final out-degree of any given node is until all nodes have been inserted. Therefore, having two data fields seems to be the most straightforward solution while still adhering to the adjacency-list implementation. This trade off, in my opinion, is acceptable as the *Page-Rank* algorithm is the focus of this assignment, not the amount of space the structure uses.\
+Lastly, to avoid the annoyances of $O(n^2)$ time complexities for calculating the nodes that point to a given node (or, vice versa, for calculating the nodes that a given node points to), both directions of adjacency lists are stored in the `Graph`. Understandably, this is highly nonoptimal as the storage requirement doubles by doing so. However, I was unable to determine a better solution to mitigate this issue. For example, instead of storing a `std::vector<std::string>` the map could instead store a `std::vector<std::pair<std::string, double>>` where the `double` represents $\frac{1}{outdegree(node)}$. Yet this doesn't seem possible as there is no way of knowing during the insertion process what the final out-degree of any given node is until all nodes have been inserted. Therefore, having two data fields seems to be the most straightforward solution while still adhering to the adjacency-list implementation. This trade off, in my opinion, is acceptable as the *Page-Rank* algorithm is the focus of this assignment, not the amount of space the structure uses.
+
+# Time Complexity Analysis of `main`
+
+The `main` function simply calls `Clap().Run()`. The `Clap()` constructor method is $O(1)$. The `Run()` method requires parsing $l$ number of lines provided by the user and subsequently running the `Graph::Insert` and `Graph::PageRank` methods. Since the insertion must be done $l$ times and the page-rank is calculated only once, the time complexity of `Clap::Run` and thus the `main` function is: $O(l) * O(1) + O(p * n^2) = O(l) + O(p * n^2) = O(l + p * n^2) \sim O(p * n^2)$. Therefore, the time complexity of `main` is bounded by the time complexity of `Graph::PageRank`.\
 
 # Time Complexity Analysis of `Graph`
 
 The following are time complexity analyses of the `Graph` class's functions. Please note that in order to not surpass the project assignment's $3$ page limit for this document, only the time complexities of the `Graph` class's major functions are listed. All other functions not listed below are likely either menial or have a time complexity of $O(1)$.\
 \
-For reference, recall that the `Graph` class has the underlying `Data from` and `Data into` data fields containing the graph's data, as well as the following type definitions:
-
-``` cpp
-// Represents a webpage.
-using Node = std::string;
-
-// Represents a calculated rank via the 'PageRank' algorithm.
-using Rank = double;
-
-// Represents a node's adjacency list.
-using List = std::vector<Node>;
-
-// Represents the graph; that is, all adjacency lists for all nodes.
-using Data = std::map<Node, List>;
-
-// Represents the returned 'PageRank' computation.
-using Page = std::map<Node, Rank>;
-
-// Represents the direction order with which `Data` and `List` are stored/generated.
-enum Flow
-{
-    From,
-    Into,
-};
-```
+For reference, recall that the `Graph` class has the underlying `Data from` and `Data into` data fields containing the graph's data. For reference of the underlying type definitions provided by `Graph`, please refer to the code-base.
 
 ## Analysis
 
