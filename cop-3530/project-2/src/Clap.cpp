@@ -4,6 +4,7 @@
 
 // std...
 #include <iostream>
+#include <iomanip>
 #include <sstream>
 
 // custom...
@@ -68,7 +69,7 @@ void Clap::Parse(unsigned int count, unsigned int power)
         }
     }
 
-    this->Print(power);
+    Print(power);
 }
 
 void Clap::Insert(const Graph::Node& origin, const Graph::Node& target)
@@ -80,7 +81,8 @@ void Clap::Print(unsigned int power)
 {
     for(const auto& pair : graph.PageRank(power))
     {
-        std::cout << pair.first << " " << pair.second << std::endl;
+        std::cout << pair.first << " ";
+        std::cout << std::fixed << std::setprecision(2) << pair.second << std::endl;
     }
 }
 
