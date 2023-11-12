@@ -1,0 +1,21 @@
+# ninja log v5
+1	20	1699649281533129281	catch2-populate-prefix/src/catch2-populate-stamp/catch2-populate-mkdir	b99677b7b0b35e2c
+1	20	1699649281533129281	/Users/azepp/Documents/ufo/uf/cop-3530/project-2/cmake-build-debug/_deps/catch2-subbuild/catch2-populate-prefix/src/catch2-populate-stamp/catch2-populate-mkdir	b99677b7b0b35e2c
+20	5871	1699649287384138848	catch2-populate-prefix/src/catch2-populate-stamp/catch2-populate-download	648e251f2997a175
+20	5871	1699649287384138848	/Users/azepp/Documents/ufo/uf/cop-3530/project-2/cmake-build-debug/_deps/catch2-subbuild/catch2-populate-prefix/src/catch2-populate-stamp/catch2-populate-download	648e251f2997a175
+5871	5897	0	catch2-populate-prefix/src/catch2-populate-stamp/catch2-populate-update	a3076049daf518cc
+5871	5897	0	/Users/azepp/Documents/ufo/uf/cop-3530/project-2/cmake-build-debug/_deps/catch2-subbuild/catch2-populate-prefix/src/catch2-populate-stamp/catch2-populate-update	a3076049daf518cc
+5897	5906	1699649287419597407	catch2-populate-prefix/src/catch2-populate-stamp/catch2-populate-patch	ff2877f4e0790e9
+5897	5906	1699649287419597407	/Users/azepp/Documents/ufo/uf/cop-3530/project-2/cmake-build-debug/_deps/catch2-subbuild/catch2-populate-prefix/src/catch2-populate-stamp/catch2-populate-patch	ff2877f4e0790e9
+5907	5916	1699649287428949847	catch2-populate-prefix/src/catch2-populate-stamp/catch2-populate-configure	7734fef48131ed93
+5907	5916	1699649287428949847	/Users/azepp/Documents/ufo/uf/cop-3530/project-2/cmake-build-debug/_deps/catch2-subbuild/catch2-populate-prefix/src/catch2-populate-stamp/catch2-populate-configure	7734fef48131ed93
+5916	5925	1699649287438208375	catch2-populate-prefix/src/catch2-populate-stamp/catch2-populate-build	b17ed846435dfd39
+5916	5925	1699649287438208375	/Users/azepp/Documents/ufo/uf/cop-3530/project-2/cmake-build-debug/_deps/catch2-subbuild/catch2-populate-prefix/src/catch2-populate-stamp/catch2-populate-build	b17ed846435dfd39
+5925	5935	1699649287447710433	catch2-populate-prefix/src/catch2-populate-stamp/catch2-populate-install	54733b82e493dc9a
+5925	5935	1699649287447710433	/Users/azepp/Documents/ufo/uf/cop-3530/project-2/cmake-build-debug/_deps/catch2-subbuild/catch2-populate-prefix/src/catch2-populate-stamp/catch2-populate-install	54733b82e493dc9a
+5935	5944	1699649287457214241	catch2-populate-prefix/src/catch2-populate-stamp/catch2-populate-test	ead59f2d1e1603bb
+5935	5944	1699649287457214241	/Users/azepp/Documents/ufo/uf/cop-3530/project-2/cmake-build-debug/_deps/catch2-subbuild/catch2-populate-prefix/src/catch2-populate-stamp/catch2-populate-test	ead59f2d1e1603bb
+5944	5957	1699649287470221094	CMakeFiles/catch2-populate-complete	2f599adbc0a760ad
+5944	5957	1699649287470221094	catch2-populate-prefix/src/catch2-populate-stamp/catch2-populate-done	2f599adbc0a760ad
+5944	5957	1699649287470221094	/Users/azepp/Documents/ufo/uf/cop-3530/project-2/cmake-build-debug/_deps/catch2-subbuild/CMakeFiles/catch2-populate-complete	2f599adbc0a760ad
+5944	5957	1699649287470221094	/Users/azepp/Documents/ufo/uf/cop-3530/project-2/cmake-build-debug/_deps/catch2-subbuild/catch2-populate-prefix/src/catch2-populate-stamp/catch2-populate-done	2f599adbc0a760ad
