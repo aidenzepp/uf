@@ -127,9 +127,6 @@ private:
         /*
          * Used for finding the nodes that flow
          * "from" the given node.
-         *
-         * This is the default way that nodes
-         * are stored in the `data` field.
          */
         From,
 
@@ -145,15 +142,18 @@ private:
     //
 
     /*
-     * @brief Returns the number of unique nodes stored in the graph. Note that
-     * the returned value is the maximum between the `from` and `into` data fields
-     * in the event they become desynchronized.
+     * @brief Calculates the number of unique nodes stored in the graph.
+     *
+     * @return The maximum between the `from` and `into` data fields in the event
+     * that they become desynchronized.
      */
     unsigned int GetSize() const;
 
     /*
-     * @briefs Returns the default ranks of the nodes in the graph; based off of
-     * the 'PageRank' algorithm (i.e., `1.0 / GetSize()`).
+     * @briefs Calculates the default rank a node; based off of the 'Page Rank'
+     * algorithm.
+     *
+     * @return The default ranks of the nodes in the graph (i.e., `1.0 / GetSize()`).
      */
     Rank GetRank() const;
 
@@ -184,6 +184,8 @@ private:
      * @brief Returns the graph's data based on the flow direction provided.
      *
      * @param flow The direction of the returned data.
+     *
+     * @return The `Data` associated with the `Flow` direction.
      */
     Data GetData(const Flow& flow) const;
 

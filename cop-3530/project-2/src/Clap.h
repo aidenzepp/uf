@@ -10,7 +10,7 @@
 #include <vector>
 #include <string>
 
-// custom...
+// src...
 #include "Graph.h"
 
 /**
@@ -29,7 +29,7 @@ class Clap
 public:
 
     //
-    // Static Methods
+    // Methods
     //
 
     /*

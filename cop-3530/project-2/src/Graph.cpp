@@ -3,10 +3,10 @@
 //
 
 // std...
-#include <iostream>
 #include <algorithm>
+#include <iostream>
 
-// custom...
+// src...
 #include "Graph.h"
 
 //
@@ -72,9 +72,9 @@ Graph::Rank Graph::GetRank() const
 
 Graph::Rank Graph::GetRank(const Graph::Node &node, const Graph::Page &page) const
 {
-    unsigned int outdegree = GetList(node, Graph::Flow::From).size();
+    unsigned int outdegree = GetList(node, Flow::From).size();
 
-    // `node` is found in `page` AND `outdegree` is not zero.
+    // `node` is found in `page`.
     try
     {
         return (outdegree != 0) ? page.at(node) / static_cast<Rank>(outdegree) : 0.0;
@@ -157,9 +157,9 @@ void Graph::GetPage(unsigned int power, Graph::Page& page) const
         pair.second = 0.0;
 
         // For each node that flows into the current node...
-        for(const Node& node : GetList(pair.first, Graph::Flow::Into))
+        for(const Node& node : GetList(pair.first, Flow::Into))
         {
-            // Calculate the "into-node's" rank. Add to current node.
+            // Calculate the into-node's rank. Add to current node.
             pair.second += GetRank(node, page);
         }
     }

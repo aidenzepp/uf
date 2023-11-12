@@ -12,9 +12,9 @@
 // catch...
 #include <catch2/catch_test_macros.hpp>
 
-// custom...
+// src...
 #define private public      // Bad practice, but for the sake of the assignment.
-#include "../src/Graph.h"
+#include "Graph.h"
 
 /*
  * To check the output (via the project directory):

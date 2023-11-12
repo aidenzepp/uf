@@ -7,7 +7,7 @@
 #include <iomanip>
 #include <sstream>
 
-// custom...
+// src...
 #include "Clap.h"
 
 //
@@ -15,7 +15,7 @@
 //
 
 //
-// Static Methods
+// Methods
 //
 
 void Clap::Run()
@@ -38,7 +38,7 @@ void Clap::Run()
 //
 
 //
-// Static Methods
+// Methods
 //
 
 void Clap::Parse(unsigned int count, unsigned int power)
