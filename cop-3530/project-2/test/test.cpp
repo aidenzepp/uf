@@ -58,21 +58,21 @@ TEST_CASE("GRAPH :: Insert :: `from` Matches Expectation", "[Insert]")
 {
     Graph graph = Graph();
     std::pair<std::string, std::string> pairs[15] = {
-            std::make_pair("google.com", "google.com"),
-            std::make_pair("google.com", "gmail.com"),
-            std::make_pair("google.com", "yahoo.com"),
-            std::make_pair("google.com", "facebook.com"),
-            std::make_pair("google.com", "youtube.com"),
-            std::make_pair("bing.com", "google.com"),
-            std::make_pair("bing.com", "gmail.com"),
-            std::make_pair("bing.com", "yahoo.com"),
-            std::make_pair("bing.com", "facebook.com"),
-            std::make_pair("bing.com", "youtube.com"),
-            std::make_pair("test.com", "google.com"),
-            std::make_pair("test.com", "gmail.com"),
-            std::make_pair("test.com", "yahoo.com"),
-            std::make_pair("test.com", "facebook.com"),
-            std::make_pair("test.com", "youtube.com"),
+            { "google.com", "google.com" },
+            { "google.com", "gmail.com" },
+            { "google.com", "yahoo.com" },
+            { "google.com", "facebook.com" },
+            { "google.com", "youtube.com" },
+            { "bing.com", "google.com" },
+            { "bing.com", "gmail.com" },
+            { "bing.com", "yahoo.com" },
+            { "bing.com", "facebook.com" },
+            { "bing.com", "youtube.com" },
+            { "test.com", "google.com" },
+            { "test.com", "gmail.com" },
+            { "test.com", "yahoo.com" },
+            { "test.com", "facebook.com" },
+            { "test.com", "youtube.com" },
     };
 
     // Insert the pairs from `pairs`.
@@ -221,7 +221,7 @@ TEST_CASE("GRAPH :: PageRank :: PageRank Properly Returns Default", "[PageRank]"
     }
 }
 
-TEST_CASE("GRAPH :: PageRank :: `GetPage` Matches Expection - Power of 2", "[PageRank]")
+TEST_CASE("GRAPH :: PageRank :: Power of 2 Matches Expectation", "[PageRank]")
 {
     Graph graph = Graph();
     std::pair<std::string, std::string> pairs[7] = {
