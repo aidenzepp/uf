@@ -18,10 +18,10 @@
  * attributes of: directed, unweighted, unconnected, and cyclic. The graph
  * is a mild representation of a web-network.
  *
- * The graph stores a value of type `std::map<std::string, std::vector<std::string>>`
+ * The graph stores values of type `std::map<std::string, std::vector<std::string>>`
  * which represents the graph itself. Each key represents a website, and
  * the vector of strings represents the websites that the aforementioned
- * website is linked to.
+ * website is linked to or from.
  *
  * Because of the chosen data-structure representation
  * (i.e., `std::map` and `std::vector`), the `Graph` is capable of taking
