@@ -7,7 +7,7 @@ output: pdf_document
 
 # Test Cases
 
-The following are the test cases created for the *Project 2* assignment using the *Catch2*testing framework.
+The following are the test cases created for the *Project 2* assignment using the *Catch2* testing framework.
 
 ## Test 1
 
