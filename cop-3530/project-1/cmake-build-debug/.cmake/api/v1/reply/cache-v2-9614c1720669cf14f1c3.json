@@ -55,7 +55,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/Users/azepp/Documents/ufo/uf/cop-3530/project-2/cmake-build-debug"
+			"value" : "/Users/azepp/Documents/ufo/uf/cop-3530/project-1/cmake-build-debug"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -479,7 +479,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/Users/azepp/Documents/ufo/uf/cop-3530/project-2/cmake-build-debug/CMakeFiles/pkgRedirects"
+			"value" : "/Users/azepp/Documents/ufo/uf/cop-3530/project-1/cmake-build-debug/CMakeFiles/pkgRedirects"
 		},
 		{
 			"name" : "CMAKE_GENERATOR",
@@ -539,7 +539,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/Users/azepp/Documents/ufo/uf/cop-3530/project-2"
+			"value" : "/Users/azepp/Documents/ufo/uf/cop-3530/project-1"
 		},
 		{
 			"name" : "CMAKE_INSTALL_NAME_TOOL",
@@ -819,7 +819,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "project_2"
+			"value" : "project_1"
 		},
 		{
 			"name" : "CMAKE_RANLIB",
@@ -1102,7 +1102,7 @@
 			"value" : "FALSE"
 		},
 		{
-			"name" : "project_2_BINARY_DIR",
+			"name" : "project_1_BINARY_DIR",
 			"properties" : 
 			[
 				{
@@ -1111,10 +1111,10 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/Users/azepp/Documents/ufo/uf/cop-3530/project-2/cmake-build-debug"
+			"value" : "/Users/azepp/Documents/ufo/uf/cop-3530/project-1/cmake-build-debug"
 		},
 		{
-			"name" : "project_2_IS_TOP_LEVEL",
+			"name" : "project_1_IS_TOP_LEVEL",
 			"properties" : 
 			[
 				{
@@ -1126,7 +1126,7 @@
 			"value" : "ON"
 		},
 		{
-			"name" : "project_2_SOURCE_DIR",
+			"name" : "project_1_SOURCE_DIR",
 			"properties" : 
 			[
 				{
@@ -1135,7 +1135,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/Users/azepp/Documents/ufo/uf/cop-3530/project-2"
+			"value" : "/Users/azepp/Documents/ufo/uf/cop-3530/project-1"
 		}
 	],
 	"kind" : "cache",

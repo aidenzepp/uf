@@ -1,3 +1,10 @@
-/Users/azepp/Documents/ufo/uf/cop-3530/project-2/cmake-build-debug/CMakeFiles/project_2.dir
+/Users/azepp/Documents/ufo/uf/cop-3530/project-2/cmake-build-debug/CMakeFiles/Main.dir
+/Users/azepp/Documents/ufo/uf/cop-3530/project-2/cmake-build-debug/CMakeFiles/Test.dir
 /Users/azepp/Documents/ufo/uf/cop-3530/project-2/cmake-build-debug/CMakeFiles/edit_cache.dir
 /Users/azepp/Documents/ufo/uf/cop-3530/project-2/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/azepp/Documents/ufo/uf/cop-3530/project-2/cmake-build-debug/_deps/catch2-build/CMakeFiles/edit_cache.dir
+/Users/azepp/Documents/ufo/uf/cop-3530/project-2/cmake-build-debug/_deps/catch2-build/CMakeFiles/rebuild_cache.dir
+/Users/azepp/Documents/ufo/uf/cop-3530/project-2/cmake-build-debug/_deps/catch2-build/src/CMakeFiles/Catch2.dir
+/Users/azepp/Documents/ufo/uf/cop-3530/project-2/cmake-build-debug/_deps/catch2-build/src/CMakeFiles/Catch2WithMain.dir
+/Users/azepp/Documents/ufo/uf/cop-3530/project-2/cmake-build-debug/_deps/catch2-build/src/CMakeFiles/edit_cache.dir
+/Users/azepp/Documents/ufo/uf/cop-3530/project-2/cmake-build-debug/_deps/catch2-build/src/CMakeFiles/rebuild_cache.dir
